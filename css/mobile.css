@@ -110,3 +110,56 @@ input[type="checkbox"]:checked ~ .mobile .mobile-lines > div::after {
 input[type="checkbox"]:checked {
   z-index: 2;
 }
+#main-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: auto;
+  /* grid-auto-flow: dense; */
+  grid-gap: 40px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.big {
+  grid-column: 1 / 1;
+}
+.big img,
+img {
+  height: 500px;
+  width: 430px;
+}
+.btn {
+  outline: none;
+  border: none;
+}
+@media only screen and (max-width: 437px) {
+  #main-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    /* grid-auto-flow: dense; */
+    grid-gap: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 10px 10px;
+  }
+  .big {
+    grid-column: 1 / 1;
+  }
+  .big img,
+  img {
+    height: 250px;
+    width: 300px;
+  }
+  .hero {
+    background-position: center;
+  }
+  .hero-content h1.main-title {
+    color: #e26d1a;
+    font-weight: 900;
+  }
+  /* .btn:active {
+    outline: none;
+    border: none;
+    outline-style: none;
+  } */
+}
