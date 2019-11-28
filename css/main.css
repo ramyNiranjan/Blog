@@ -266,6 +266,40 @@ input[type="submit"]:hover {
   background: #02a55a;
 }
 
+/* about */
+#about {
+  width: 100%;
+  padding: 100px 20px;
+  min-height: calc(100vh - 59.2px - 42px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#about main {
+  color: #fff;
+  padding: 10px 40px;
+}
+#about main h2,
+#about main h3 {
+  color: #e26d1a;
+  margin-bottom: 10px;
+}
+#about main p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#about .pic-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .pic-card img {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+}
+
 @media only screen and (min-width: 531px) and (max-width: 1187px) {
   #main-details {
     display: grid;
@@ -293,6 +327,11 @@ input[type="submit"]:hover {
   .btn {
     outline: none;
     border: none;
+  }
+  #about .pic-card img {
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
   }
 }
 

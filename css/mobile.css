@@ -130,6 +130,11 @@ img {
   outline: none;
   border: none;
 }
+#about .pic-card img {
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+}
 
 @media only screen and (max-width: 437px) {
   #main-details {
