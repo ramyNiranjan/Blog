@@ -30,7 +30,7 @@ input[type="checkbox"] {
 }
 .desktop ul {
   width: 100%;
-  height: 250px;
+  height: 350px;
   position: absolute;
   /* display: none; */
   flex-direction: column;
@@ -86,7 +86,7 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked ~ .desktop ul {
   z-index: 1;
   transform: translateY(0);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0);
   transition: all 500ms;
 }
 input[type="checkbox"]:not(:checked) ~ .desktop ul {
@@ -114,7 +114,6 @@ input[type="checkbox"]:checked {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-auto-rows: auto;
-  /* grid-auto-flow: dense; */
   grid-gap: 40px;
   justify-content: center;
   margin-bottom: 40px;
@@ -131,12 +130,12 @@ img {
   outline: none;
   border: none;
 }
+
 @media only screen and (max-width: 437px) {
   #main-details {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: auto;
-    /* grid-auto-flow: dense; */
     grid-gap: 40px;
     justify-content: center;
     margin-bottom: 40px;
@@ -157,9 +156,15 @@ img {
     color: #e26d1a;
     font-weight: 900;
   }
-  /* .btn:active {
-    outline: none;
-    border: none;
-    outline-style: none;
-  } */
+  #contact {
+    height: auto;
+  }
+  #contact .contact-container {
+    width: 300px;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 450px;
+  }
+  .contact-form {
+    line-height: 2;
+  }
 }
